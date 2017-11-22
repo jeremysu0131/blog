@@ -55,6 +55,9 @@ index_generator:
 # Category & Tag
 default_category: uncategorized
 category_map:
+  Javascript: javascript
+  Vue.js: vuejs
+  C#: csharp
 tag_map:
 
 # Date / Time format
