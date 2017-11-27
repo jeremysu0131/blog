@@ -58,6 +58,8 @@ category_map:
   Javascript: javascript
   Vue.js: vuejs
   C#: csharp
+  MySQL: mysql
+  Linux: linux
 tag_map:
 
 # Date / Time format
