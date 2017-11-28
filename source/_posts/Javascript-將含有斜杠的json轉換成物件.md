@@ -16,6 +16,8 @@ tags:
 
 有時候我們在與其他人做API對接時，會發現有些json的格式會如下：
 
+<!-- more -->
+
 ```json
 {
     "item": "[{\"Authors\":[{\"NameID\":624,\"NameTypeID\":1,\"LastName\":\"Daans\",\"ForeName\":\"Melina\",\"Initials\":\"M\",\"DisplayName\":\"Daans, Melina\",\"SequenceNo\":0},{\"NameID\":625,\"NameTypeID\":1,\"LastName\":\"Lories\",\"ForeName\":\"Rik Ju\",\"Initials\":\"R J\",\"DisplayName\":\"Lories, Rik Ju\",\"SequenceNo\":1},{\"NameID\":626,\"NameTypeID\":1,\"LastName\":\"Luyten\",\"ForeName\":\"Frank P\",\"Initials\":\"F P\",\"DisplayName\":\"Luyten, Frank P\",\"SequenceNo\":2}],\"UserID\":\"813\",\"ItemID\":179,\"SequenceNo\":0,\"ItemTypeID\":4,\"FlagID\":0,\"Title\":\"Dynamic activation of bone morphogenetic protein signaling in collagen induced arthritis supports their role in joint homeostasis and disease.\",\"Title2\":\"Arthritis research & therapy\",\"Author\":\"Daans, Melina|Lories, Rik Ju|Luyten, Frank P|\",\"Affiliation\":\"\",\"Edition\":\"\",\"Volume\":\"10\",\"Volume2\":\"5\"}]"
