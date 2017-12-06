@@ -16,6 +16,8 @@ url: https://jeremysu0131.github.io
 root: /
 permalink: :title/
 permalink_defaults:
+sitemap:
+  path: sitemap.xml
 
 # Directory
 source_dir: source
@@ -84,7 +86,3 @@ theme: next
 deploy:
   type: git
   repo: https://github.com/jeremysu0131/jeremysu0131.github.io.git
-
-# _config.yml of base, not theme config
-# Please put your shortname of disqus here.
-disqus_shortname: nomicoding
