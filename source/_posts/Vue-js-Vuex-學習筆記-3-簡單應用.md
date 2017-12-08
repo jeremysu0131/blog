@@ -1,5 +1,6 @@
 ---
 title: '[Vue.js] Vuex 學習筆記 (3) - 簡單應用'
+date: 2017-12-08 22:24:54
 categories: Vue.js
 tags:
 - Vue

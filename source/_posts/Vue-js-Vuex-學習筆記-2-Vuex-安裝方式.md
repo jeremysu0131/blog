@@ -1,5 +1,6 @@
 ---
 title: '[Vue.js] Vuex 學習筆記 (2) - Vuex 安裝方式'
+date: 2017-12-07 21:43:23
 categories: Vue.js
 tags:
 - Vue
