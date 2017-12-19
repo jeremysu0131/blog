@@ -19,6 +19,8 @@ tags:
 
 Actions 類似於 mutations，但仍然有些不同：
 
+<!-- more -->
+
 * Action 提交（commit）的是 mutations ，而不是直接變更 state。
 * Actions 可以包含任意異步操作。
 
@@ -29,23 +31,22 @@ Actions 類似於 mutations，但仍然有些不同：
 ```js
 const store = new Vuex.Store({
   state: {
-    count: 0,
+    count: 0
   },
   mutations: {
     increment(state) {
       state.count++;
-    },
+    }
   },
   actions: {
-    increment (context) {
-      context.commit('increment')
-    },
-  },
+    increment(context) {
+      context.commit("increment");
+    }
+  }
 });
 ```
 
-Action 函數接受一個與 store 實例具有相同方法和屬性的 `context` 物件，因此你可以調用 `context.commit` 提交一個 mutation，或是透過 `context.state` 或 `context.getters` 來取得 state 和 getters 。
-下一章我們介紹 Modules 時，就會對 context 有更多介紹，到時就會知道 context 物件為什麼不是 store 實例本身了。
+Action 函數接受一個與 store 實例具有相同方法和屬性的 `context` 物件，因此你可以調用 `context.commit` 提交一個 mutation，或是透過 `context.state` 或 `context.getters` 來取得 state 和 getters 。下一章我們介紹 Modules 時，就會對 context 有更多介紹，到時就會知道 context 物件為什麼不是 store 實例本身了。
 
 ## 簡化程式碼
 
@@ -64,7 +65,7 @@ actions: {
 Action 透過 `store.dispatch` 方法觸發：
 
 ```js
-store.dispatch('increment')
+store.dispatch("increment");
 ```
 
 這樣看起來跟 mutations 的用法差不多，但是我們要記得 **mutations 必須是同步執行**，而 actions 則可以**異步執行**。
@@ -85,18 +86,18 @@ actions 同樣可以使用 payload 或物件的形式：
 
 ```js
 // 以 payload 形式分發
-store.dispatch('incrementAsync', {
+store.dispatch("incrementAsync", {
   amount: 10
-})
+});
 
 // 以物件形式分發
 store.dispatch({
-  type: 'incrementAsync',
+  type: "incrementAsync",
   amount: 10
-})
+});
 ```
 
-我們用一個更加實際的例子來**調用異步API**與**分發多重 mutations**：
+我們用一個更加實際的例子來**調用異步 API**與**分發多重 mutations**：
 
 ```js
 actions: {
@@ -124,22 +125,22 @@ actions: {
 我們可以在組件中使用 `this.$store.dispatch('xxx')` 分發 action，或者 使用 `mapActions` 輔助函數將組件的 methods 映射為 `store.dispatch` 調用。
 
 ```js
-import { mapActions } from 'vuex'
+import { mapActions } from "vuex";
 
 export default {
   // ...
   methods: {
     ...mapActions([
-      'increment', // 將 `this.increment()` 映射為 `this.$store.dispatch('increment')`
+      "increment", // 將 `this.increment()` 映射為 `this.$store.dispatch('increment')`
 
       // `mapActions` 也支持载荷：
-      'incrementBy' // 將 `this.incrementBy(amount)` 映射為 `this.$store.dispatch('incrementBy', amount)`
+      "incrementBy" // 將 `this.incrementBy(amount)` 映射為 `this.$store.dispatch('incrementBy', amount)`
     ]),
     ...mapActions({
-      add: 'increment' // 將 `this.add()` 映射為 `this.$store.dispatch('increment')`
+      add: "increment" // 將 `this.add()` 映射為 `this.$store.dispatch('increment')`
     })
   }
-}
+};
 ```
 
 ## 組合 actions
@@ -162,9 +163,9 @@ actions: {
 ```
 
 ```js
-store.dispatch('actionA').then(() => {
+store.dispatch("actionA").then(() => {
   // ...
-})
+});
 ```
 
 在其他 action 中也可以這樣使用：
