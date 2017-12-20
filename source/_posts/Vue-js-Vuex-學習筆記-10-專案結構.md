@@ -23,7 +23,7 @@ Vuex 並不限制你的程式碼結構，但仍然有規定了一些需要遵守
 
 只要遵守以上規則，如何組織程式碼都是可以的，但是如果把全部程式碼放在 store 的文件中，會顯得有些雜亂，所以我們可以將 action 、 mutation 和 getter 分割到單獨的檔案。
 
-而對於大型應用，我們會希望吧 Vuex 相關程式碼分割到模塊中。
+而對於大型應用，我們會希望把 Vuex 相關程式碼分割到模塊中。
 
 以下是一個[購物車](https://github.com/vuejs/vuex/tree/dev/examples/shopping-cart)專案結構範例：
 
