@@ -1,5 +1,5 @@
 ---
-title: '[Tools] Putty - 使用PSCP在Linux與Windows間傳送檔案'
+title: '[Tool] Putty - 使用PSCP在Linux與Windows間傳送檔案'
 date: 2017-11-30 16:28:13
 categories: Tools
 tags:
