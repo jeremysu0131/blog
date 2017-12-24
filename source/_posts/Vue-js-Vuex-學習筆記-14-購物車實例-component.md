@@ -1,8 +1,14 @@
 ---
-title: '[Vue.js] Vuex 學習筆記 (14) - 購物車實例'
+title: '[Vue.js] Vuex 學習筆記 (14) - 購物車實例 component'
 date: 2017-12-24 12:23:21
-categories:
-tags:
+categories: Vue.js
+tags: 
+- Vue
+- Vue.js
+- vue-cli
+- Vuex
+- shopping cart
+- component
 ---
 
 # 前言

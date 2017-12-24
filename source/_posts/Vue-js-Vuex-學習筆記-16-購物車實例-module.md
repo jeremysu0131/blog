@@ -1,8 +1,14 @@
 ---
 title: '[Vue.js] Vuex 學習筆記 (16) - 購物車實例 module'
 date: 2017-12-24 13:21:50
-categories:
+categories: Vue.js
 tags:
+- Vue
+- Vue.js
+- vue-cli
+- Vuex
+- shopping cart
+- module
 ---
 
 ## module

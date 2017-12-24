@@ -1,8 +1,13 @@
 ---
-title: '[Vue.js] Vuex 學習筆記 (15) - 購物車實例'
+title: '[Vue.js] Vuex 學習筆記 (15) - 購物車實例 API'
 date: 2017-12-24 13:13:02
-categories:
+categories: Vue.js
 tags:
+- Vue
+- Vue.js
+- vue-cli
+- Vuex
+- shopping cart
 ---
 
 ## Mock API
