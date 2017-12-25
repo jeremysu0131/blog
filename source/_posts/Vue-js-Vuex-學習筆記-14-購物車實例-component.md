@@ -15,6 +15,8 @@ tags:
 
 前面我們已經把 Vuex 的特性都解說完畢，應該對 Vuex 有初步的了解，但是如果沒有實作我們還是沒有辦法很熟悉，官方這邊提供了一個購物車的[範例](https://github.com/vuejs/vuex/tree/dev/examples/shopping-cart)，我們就以此來看看要如何將 Vuex 應用在購物車中。
 
+<!-- more -->
+
 ## 組件
 
 範例中共有 3 個組件分別是：
