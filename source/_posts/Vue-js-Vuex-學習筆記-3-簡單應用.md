@@ -48,17 +48,15 @@ new Vue({
     // 使用 store.commit 觸發 mutation 來改變 state
     store.commit('increment');
     console.log(store.state.count); // 1
-  }
+  },
 });
 ```
 
-建立好後打開瀏覽器的DevTools，可以在 Console中查看到數據的變化，這樣一個簡單的 Vuex 應用就實現了
-
-![result](https://lh6.googleusercontent.com/WF_q6ifP6JYe47MxTAn6Q-jWIi6AEa4qBlTjME0a2rrDKjHTsXq3wZPH7_6T1PUwk1culhL-77JAJWu__D_k=w1368-h664)
+建立好後打開瀏覽器的 DevTools，可以在 Console 中查看到數據的變化，這樣一個簡單的 Vuex 應用就實現了
 
 * **store** ：是組件中的共享狀態，而改變 state 的方法是 `mutations`
 * **mutation** ：我們只能通過 mutation 來改變 state 的狀態，不能使用 `store.state.count = 5` 這樣的方式來修改。
-> 雖然這樣的方式仍然可以修改，但非常不建議這樣使用，不通過 mutation 來改變 state ，狀態不會被同步。
+  > 雖然這樣的方式仍然可以修改，但非常不建議這樣使用，不通過 mutation 來改變 state ，狀態不會被同步。
 
 由於 store 中的 state 是響應式的，在組件中調用 store 中的狀態僅需要在 computed 屬性中返回即可。觸發變化也僅僅是在組件的 methods 中提交 mutation。
 
