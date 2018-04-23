@@ -58,6 +58,7 @@ index_generator:
 default_category: uncategorized
 category_map:
   Javascript: javascript
+  Node.js: nodejs
   Vue.js: vuejs
   C#: csharp
   MySQL: mysql
