@@ -1,7 +1,7 @@
 ---
 title: '[Node.js] Nodemailer 設定 SMTP'
 date: 2018-05-02 17:17:16
-categories:
+categories: Node.js
 tags:
 - Node.js 
 - Javascript
