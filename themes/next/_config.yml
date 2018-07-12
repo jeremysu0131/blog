@@ -27,7 +27,7 @@ favicon:
   ms_browserconfig: /images/browserconfig.xml
 
 # Set default keywords (Use a comma to separate)
-keywords: "Code, Front-end, Vue, Developer"
+keywords: "Code,Front-end,Back-end,Vue,Developer"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -128,7 +128,7 @@ social:
   #VK Group: https://vk.com/yourname || vk
   #StackOverflow: https://stackoverflow.com/yourname || stack-overflow
   #YouTube: https://youtube.com/yourname || youtube
-  #Instagram: https://instagram.com/yourname || instagram
+  Instagram: https://www.instagram.com/nomi_su || instagram
   #Skype: skype:yourname?call|chat || skype
 
 social_icons:
