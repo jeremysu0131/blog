@@ -3,6 +3,7 @@ Allow: /
 Allow: /about/
 Disallow: /archives/
 Disallow: /categories/
+Disallow: /search/
 Disallow: /tags/ 
 Disallow: /vendors/
 Disallow: /fonts/
