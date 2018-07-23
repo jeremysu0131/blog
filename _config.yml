@@ -7,8 +7,10 @@ title: Nomi Su@Coding
 subtitle: Record all of the coding problem
 description: Full Stack Developer
 author: Jeremy Su
-language: zh
-timezone: Asia/Taipei
+language: 
+- zh-tw
+- en
+timezone: 
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
