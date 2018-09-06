@@ -3,10 +3,10 @@ title: '[Vue.js] Vuex 學習筆記 (1) - 基礎介紹'
 date: 2017-12-06 14:23:41
 categories: Vue.js
 tags:
-- Vue
-- Vue.js
-- vue-cli
-- Vuex
+  - Vue
+  - Vue.js
+  - vue-cli
+  - Vuex
 ---
 
 # 什麼是 Vuex ？
@@ -65,4 +65,4 @@ Vuex 架構圖：
 
 ## 參考資料
 
-> [Vuex intro](https://vuex.vuejs.org/en/intro.html)
+> [Vuex intro](https://vuex.vuejs.org/)

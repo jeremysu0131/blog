@@ -3,11 +3,11 @@ title: '[Vue.js] Vuex 學習筆記 (11) - 插件'
 date: 2017-12-19 23:34:29
 categories: Vue.js
 tags:
-- Vue
-- Vue.js
-- vue-cli
-- Vuex
-- plugins
+  - Vue
+  - Vue.js
+  - vue-cli
+  - Vuex
+  - plugins
 ---
 
 # 插件（Plugin）
@@ -21,7 +21,7 @@ Vuex 的 store 接受 `plugins` 選項，這個選項露出每個 mutation 的�
 ```js
 const store = new Vuex.Store({
   // ...
-  plugins: [myPlugin]
+  plugins: [myPlugin],
 });
 ```
 
@@ -39,20 +39,32 @@ const myPlugin = store => {
 
 ## 在插件內提交 mutation
 
-在插件中不允許直接修改狀態，這類似於組件，只能通過提交 mutation 來觸發變化。
+Plugin 與 Component 一樣不允許直接修改狀態，我們只能通過提交 mutation 來觸發 store 的變化。
 
-通過提交 mutation ，插件可以用來同步數據到 store ，例如同步 websocket 數據到 store。
+### 範例
+
+我們以 socket 的方式來模擬一個聊天室
 
 ```js
 export default function createWebSocketPlugin(socket) {
   return store => {
-    socket.on("data", data => {
+    // 當 socket 收到新資料時
+    // 假設有其他用戶發送新訊息
+    socket.on('data', data => {
       // 同步數據到 store
-      store.commit("receiveData", data);
+      // 將新訊息放到 store 中
+      store.commit('receiveData', data);
     });
+
+    // 當我們做任何 store.commit 時，會觸發一下程式碼
+    // 如發送訊息、回收訊息等
     store.subscribe(mutation => {
-      if (mutation.type === "UPDATE_DATA") {
-        socket.emit("update", mutation.payload);
+      // 當我們想取消一個已經發送的訊息時
+      // 檢查如果是 store.commit('deleteMessage)，則觸發一下動作
+      if (mutation.type === 'deleteMessage') {
+        // 這是 socket 的行為，表示 socker 向後端發送出需要更新資料
+        // 像後端發送需要刪除的訊息
+        socket.emit('update', mutation.payload);
       }
     });
   };
@@ -63,8 +75,14 @@ export default function createWebSocketPlugin(socket) {
 const plugin = createWebSocketPlugin(socket);
 
 const store = new Vuex.Store({
-  state,
-  mutations,
-  plugins: [plugin]
+  state: {
+    data: {},
+  },
+  mutations: {
+    updateData(data) {
+      state.data = data;
+    },
+  },
+  plugins: [plugin],
 });
 ```
