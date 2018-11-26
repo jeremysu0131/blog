@@ -1,6 +1,6 @@
 ---
-title: '[Tool] NVM - Node Version Manager 使用'
-date: 2017-12-23 15:08:57
+title: '[Tool] NVM - 升級 node'
+date: 2018-11-26 10:08:57
 categories:
 tags:
 ---
