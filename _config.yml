@@ -8,7 +8,7 @@ subtitle: Record all of the coding problem
 description: Full Stack Developer
 author: Jeremy Su
 language: en
-timezone: 
+timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -44,7 +44,7 @@ highlight:
   line_number: true
   auto_detect: false
   tab_replace:
-  
+
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
@@ -53,10 +53,12 @@ index_generator:
   path: ''
   per_page: 10
   order_by: -date
-  
+
 # Category & Tag
 default_category: uncategorized
 category_map:
+  Frontend: frontend
+  Backend: backend
   Javascript: javascript
   Node.js: nodejs
   Vue.js: vuejs
@@ -92,16 +94,15 @@ deploy:
 # The following settings is the quick start options.
 
 generator_amp:
-  templateDir:  amp-template
+  templateDir: amp-template
   assetDistDir: amp-dist
   logo:
-    path:   sample/sample-logo.png
-    width:  600
+    path: sample/sample-logo.png
+    width: 600
     height: 60
   substituteTitleImage:
-    path:   sample/sample-substituteTitleImage.png
-    width:  1024
+    path: sample/sample-substituteTitleImage.png
+    width: 1024
     height: 800
-  warningLog: false   # To display warning, please set true.
+  warningLog: false # To display warning, please set true.
   validateAMP: true
-  

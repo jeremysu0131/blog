@@ -2,13 +2,17 @@
 title: '[axios] 處理 x-www-form-urlencoded 格式問題'
 date: 2018-11-26 10:46:32
 categories:
+  - frontend
 tags:
+  - axios
+  - json
 ---
-
 
 # axios
 
 axios 是基於 Promise 的瀏覽器與 node.js 的客戶端。使用的方式非常簡單清楚，安裝與使用[官方網站](https://github.com/axios/axios)都寫的非常詳細。
+
+<!-- more -->
 
 ## x-www-form-urlencoded
 
@@ -34,7 +38,7 @@ npm install qs
 2. 引用套件
 
 ```js
-import Qs from "qs";
+import Qs from 'qs';
 
 Vue.prototype.Qs = Qs;
 ```
@@ -42,7 +46,7 @@ Vue.prototype.Qs = Qs;
 3. 使用方式
 
 ```js
-const data = { firstName: "Jeremy", lastName: "", age: "18" };
+const data = { firstName: 'Jeremy', lastName: '', age: '18' };
 console.log(this.Qs.stringify(data));
 //firstName=Jeremy&lastName=&age=18
 ```
@@ -53,7 +57,7 @@ console.log(this.Qs.stringify(data));
 
 ```js
 const data = {
-  person: { firstName: "Jeremy", lastName: "", age: "18" }
+  person: { firstName: 'Jeremy', lastName: '', age: '18' },
 };
 ```
 
@@ -74,11 +78,11 @@ console.log(this.Qs.stringify(data));
 
 ```js
 const data = {
-  person: { firstName: "Jeremy", lastName: "", age: "18" }
+  person: { firstName: 'Jeremy', lastName: '', age: '18' },
 };
 console.log(
   this.Qs.stringify({
-    person: JSON.stringify(data.person)
+    person: JSON.stringify(data.person),
   })
 );
 //person=%7B%22firstName%22%3A%22Jeremy%22%2C%22lastName%22%3A%22%22%2C%22age%22%3A%2218%22%7D
