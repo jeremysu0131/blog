@@ -1,5 +1,5 @@
 ---
-title: '[Postman] CryptoJS 加解密指令'
+title: '[Postman] 使用 CryptoJS 來操作 MD5 或 Base64'
 date: 2018-05-22 14:17:04
 categories: Postman
 tags:
@@ -9,8 +9,7 @@ tags:
 - MD5
 ---
 
-Postman 是一個很方便測試 API 的工具，但有時我們需要使用一些加密方式，如： base64, MD5 等。
-
+Postman 是一個很方便測試 API 的工具，但有時我們會需要使用 base64, MD5 等功能。
 <!-- more -->
 
 ## Base64
