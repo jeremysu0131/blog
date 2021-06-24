@@ -1,10 +1,10 @@
 User-agent: *
 Allow: /
 Allow: /about/
-Disallow: /archives/
-Disallow: /categories/
+Allow: /archives/
+Allow: /categories/
+Allow: /tags/ 
 Disallow: /search/
-Disallow: /tags/ 
 Disallow: /vendors/
 Disallow: /fonts/
 Disallow: /vendors/
